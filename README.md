@@ -54,3 +54,131 @@
 
 
 
+
+
+
+
+
+
+
+<Window x:Class="CMCS.Lecturer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMCS"
+        mc:Ignorable="d"
+        Title="Lecturer" Height="450" Width="800">
+    <Grid Height="NaN" Margin="0,24,0,0" Width="NaN">
+
+        <StackPanel Background="#2C3E50" Margin="4,-20,2,0">
+            <!-- Heading -->
+            <TextBlock Text="Lecturer Dashboard" 
+               FontSize="28" 
+               FontWeight="Bold" 
+               Foreground="White"
+               HorizontalAlignment="Center" 
+               Margin="0,0,0,20"/>
+        </StackPanel>
+
+
+        <Button Content="Submit Claim" Name="SubmitClaimButton" Margin="292,70,280,272" Padding="10" Click="SubmitClaimButton_Click"/>
+        <Button Content="Upload Documents" Name="UploadDocumentsButton" Margin="292,171,280,171" Padding="10" Click="UploadDocumentsButton_Click"/>
+        <Button Content="Check Status" Name="CheckStatusButton" Margin="292,275,280,67" Padding="10" Click="CheckStatusButton_Click"/>
+
+
+
+
+    </Grid>
+</Window>
+
+
+
+
+
+
+
+
+<Window x:Class="CMCS.AcademicManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMCS"
+        mc:Ignorable="d"
+        Title="AcademicManager" Height="450" Width="800">
+  
+
+       
+
+
+        <Grid Height="NaN" Margin="0,24,0,0" Width="NaN">
+
+            <StackPanel Background="#2C3E50" Margin="4,-20,2,0">
+                <!-- Heading -->
+                <TextBlock Text="Academic Manager" 
+    FontSize="28" 
+    FontWeight="Bold" 
+    Foreground="White"
+    HorizontalAlignment="Center" 
+    Margin="0,0,0,20"/>
+            </StackPanel>
+
+
+            <Button Content="Verify and Approve Claim" Name="VerifyClaimButton" Margin="273,93,249,191" Padding="10" Click="VerifyClaimButton_Click"/>
+
+
+
+
+        </Grid>
+</Window>
+
+
+
+
+
+
+
+
+<Window x:Class="CMCS.ProgrammeCoordinator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMCS"
+        mc:Ignorable="d"
+        Title="ProgrammeCoordinator" Height="450" Width="800">
+    
+
+        <Grid Height="NaN" Margin="0,24,0,0" Width="NaN">
+
+            <StackPanel Background="#2C3E50" Margin="4,-20,2,0">
+                <!-- Heading -->
+                <TextBlock Text="Programme Coordinator" 
+           FontSize="28" 
+           FontWeight="Bold" 
+           Foreground="White"
+           HorizontalAlignment="Center" 
+           Margin="0,0,0,20"/>
+            </StackPanel>
+
+
+        <Button Content="Verify and Approve Claim" Name="VerifyClaimButton" Margin="273,93,249,191" Padding="10" Click="VerifyClaimButton_Click"/>
+          
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+</Window>
+
+
+
+
