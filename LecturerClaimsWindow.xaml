@@ -1,0 +1,25 @@
+﻿<Window x:Class="CMCS.LecturerClaimsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="My Claims" Height="400" Width="600">
+    <Grid>
+        <ListView x:Name="ClaimsListView" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="560">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Hours Worked" DisplayMemberBinding="{Binding HoursWorked}" Width="100"/>
+                    <GridViewColumn Header="Hourly Rate" DisplayMemberBinding="{Binding HourlyRate}" Width="100"/>
+                    <GridViewColumn Header="Total Claim" DisplayMemberBinding="{Binding TotalClaim}" Width="100"/>
+                    <GridViewColumn Header="Notes" DisplayMemberBinding="{Binding Notes}" Width="100"/>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="100"/>
+                    <GridViewColumn Header="Supporting Document" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="View Document" Click="ViewDocument_Click"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
