@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome!</h2>
+<p>You have successfully logged in.</p>
+
+<!-- Role Selection Section -->
+<h3>Select Your Role</h3>
+<div>
+    <form method="post" asp-controller="Home" asp-action="SelectRole">
+        <button type="submit" name="role" value="Lecturer" class="btn btn-primary">Lecturer</button>
+        <button type="submit" name="role" value="AcademicManager" class="btn btn-success">Academic Manager</button>
+        <button type="submit" name="role" value="ProgrammeCoordinator" class="btn btn-info">Programme Coordinator</button>
+    </form>
+</div>
