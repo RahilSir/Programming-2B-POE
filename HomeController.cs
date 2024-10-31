@@ -88,27 +88,7 @@ namespace CMCS.Controllers
 
 
 
-        //public static class InMemoryClaimStore
-        //{
-        //    public static List<Claim> Claims = new List<Claim>();
-        //}
-
-
-        //[HttpPost]
-        //public IActionResult SubmitClaim(Claim model)
-        //{
-        //    // Calculate total claim
-        //    model.TotalClaim = model.HoursWorked * model.HourlyRate;
-        //    model.Status = "Pending";
-
-        //    // Add to in-memory store
-        //    InMemoryClaimStore.Claims.Add(model);
-        //    TempData["SuccessMessage"] = "Claim submitted successfully!";
-        //    return RedirectToAction("LecturerDashboard");
-
-
-        //}
-
+       
 
 
 
