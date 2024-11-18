@@ -1,17 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace CMCS.Models
+﻿namespace test.Models
 {
     public class LoginViewModel
     {
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
-
-        [Required]
-        [DataType(DataType.Password)]
+        public string Username { get; set; }
         public string Password { get; set; }
 
-        public bool RememberMe { get; set; }
+        public string Role { get; set; }
     }
 }

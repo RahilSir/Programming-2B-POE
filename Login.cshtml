@@ -1,29 +1,18 @@
-﻿@model CMCS.Models.LoginViewModel
+﻿@model test.Models.LoginViewModel
 
-@{
-    ViewData["Title"] = "Login";
-}
-
-<h1>@ViewData["Title"]</h1>
+<h2>Login</h2>
 
 <form asp-action="Login" method="post">
-    <div>
-        <label asp-for="Email"></label>
-        <input asp-for="Email" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div>
-        <label asp-for="Password"></label>
-        <input asp-for="Password" type="password" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div>
-        <input asp-for="RememberMe" type="checkbox" />
-        <label asp-for="RememberMe">Remember Me</label>
-    </div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" asp-for="Username" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" asp-for="Password" required />
+
     <button type="submit">Login</button>
 </form>
 
-<div>
-    @Html.ActionLink("Register", "Register", "Account")
-</div>
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div style="color:red;">@ViewBag.ErrorMessage</div>
+}

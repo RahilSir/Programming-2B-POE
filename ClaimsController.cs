@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CMCS.Data;
+using test.Data;
 
 
 public class ClaimsController : Controller
@@ -12,11 +13,20 @@ public class ClaimsController : Controller
         _context = context;
     }
 
-    // Assuming you have a method to fetch claims
-    public async Task<IActionResult> Index()
+    
+    public async Task<IActionResult> Index(string status = "Pending")
     {
-        var claims = await _context.Claims.ToListAsync(); // Fetch claims from the database
+        var claims = await _context.Claims
+            .Where(c => c.Status == status)
+            .ToListAsync();
+
         return View(claims);
     }
+
+
+
+
+
+
 
 }
